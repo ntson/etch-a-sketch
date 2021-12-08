@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#grid {
+  border: 1px solid black;
+  width: 90%;
+  height: 50%;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+}
+
+.square {
+  border: 1px solid black;
+}
+
+.filled {
+  background-color: cyan;
+}
