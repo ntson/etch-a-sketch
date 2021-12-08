@@ -18,10 +18,28 @@
     <div class="outer">
       <h1 class="title">ETCH-A-SKETCH</h1>
       <div class="button-group">
-        <button id="clear-button" class="button">Eraser</button>
+        <button id="erase-button" class="button">Eraser</button>
         <button id="begin-button" class="button">Pencil</button>
+        <button id="clear-button" class="button">Clear</button>
       </div>
       <div id="grid"></div>
+      <form id="form">
+        <input
+          type="text"
+          id="row-input"
+          name="row"
+          class="input"
+          placeholder="Enter number of rows (default: 16)"
+        />
+        <input
+          type="text"
+          id="column-input"
+          name="column"
+          class="input"
+          placeholder="Enter number of columns (default: 16)"
+        />
+        <button type="submit" class="button">Confirm</button>
+      </form>
     </div>
   </body>
 </html>
