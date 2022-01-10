@@ -35,8 +35,11 @@ form.addEventListener('submit', function (e) {
   const formData = new FormData(e.target);
   const formProps = Object.fromEntries(formData);
 
-  const rows = parseInt(formProps.row, 10);
-  const columns = parseInt(formProps.column, 10);
+  const rowsData = parseInt(formProps.row, 10);
+  const columnsData = parseInt(formProps.column, 10);
+
+  const rows = rowsData > 0 ? rowsData : 16;
+  const columns = columnsData > 0 ? columnsData : 16;
 
   populateGrid(rows, columns);
 });
